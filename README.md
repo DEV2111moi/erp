@@ -125,8 +125,11 @@ Smartly analyzes and ranks vendor quotes using price, delivery time, and vendor 
 - 📊 Displays **detailed score breakdown**
 - ⚡ Enables **quick, data-driven decisions**
 
-
+---
 <img width="2795" height="1548" alt="image" src="https://github.com/user-attachments/assets/630e5d21-ba1f-4413-a376-d2aff64c92f9" />
-<img width="2793" height="1557" alt="image" src="https://github.com/user-attachments/assets/73cf3ad6-b12c-4079-a51c-08683dfd659e" />
+<br>
+---
+<img width="2793" height="1557" alt="image" src="https://github.com/user-attachments/assets/73cf3ad6-b12c-4079-a51c-08683dfd659e" /> <br>
+---
 <img width="2793" height="1545" alt="image" src="https://github.com/user-attachments/assets/ae188314-6324-4733-86ba-c6dffd858c64" />
 
