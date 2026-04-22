@@ -1,53 +1,98 @@
-# 🏢 Procurement ERP System
+# 🚀 Procurement ERP with AI Quote Evaluation Engine
 
-## 📌 Overview
+> *“The process never ends — it evolves until intelligence itself fades.”*
 
-This project is a Procurement ERP (Enterprise Resource Planning) System designed to automate and streamline the purchasing process within an organization.
+A modern **Procurement ERP System** designed to streamline vendor management, RFQ handling, and intelligent decision-making using a **rule-based AI evaluation engine**.
 
-It enables admins to create RFQs, vendors to submit quotations, and the system to analyze and compare quotes for efficient decision-making.
+---
 
-## 🚀 Key Features
+## 🧠 Overview
 
-### 🔐 Authentication & Role-Based Access
-- Secure login system (Admin / Vendor)
+This ERP system simplifies the procurement lifecycle:
 
-### 📄 RFQ (Request for Quotation) Management
-- Admin can create RFQs for multiple products
-- Send RFQs to selected vendors
+- 📄 Create and manage **RFQs (Request for Quotations)**
+- 🏢 Handle multiple **vendors & quotes**
+- ⚡ Automatically evaluate quotes using an **AI-powered scoring engine**
+- 📊 Make **data-driven purchasing decisions**
 
-### 💰 Vendor Quotation System
-- Vendors submit quotes for requested products
+---
 
-### 🤖 AI-Based Quote Comparison
-- AI engine analyzes and compares vendor quotations
+## 🎯 Key Feature: AI Quote Evaluation Engine
 
-### 📦 Purchase Order Generation
-- Admin can generate PO based on best quote
+The core innovation of this project is the **AI Quote Evaluation Engine** — a smart scoring system that analyzes vendor quotes and ranks them.
 
-### 📊 Data Management
-- Organized storage of RFQs, quotes, and transactions
+### 🔍 Problem Solved
+Comparing multiple vendor quotes manually is:
+- Time-consuming ⏳  
+- Error-prone ❌  
+- Inefficient 📉  
+
+### 💡 Solution
+A **rule-based AI system** that:
+- Evaluates each quote
+- Scores based on key factors
+- Recommends the best vendor automatically
+
+---
+
+## ⚙️ How AI Scoring Works
+
+Each quote is evaluated using **3 weighted factors**:
+
+| Factor        | Weight | Description                     |
+|--------------|--------|---------------------------------|
+| 💰 Price      | 50%    | Lower price = higher score     |
+| 🚚 Delivery   | 30%    | Faster delivery = better       |
+| ⭐ Rating     | 20%    | Higher vendor rating preferred |
+
+### 🧮 Formula Logic (Simplified)
+
+- Price Score = Min Price / Vendor Price  
+- Delivery Score = Min Delivery / Vendor Delivery  
+- Rating Score = Vendor Rating / Max Rating  
+
+Final Score:
+
+AI Score = (0.5 × Price) + (0.3 × Delivery) + (0.2 × Rating)
+
+---
+
+## 🔄 Workflow
+
+1. Admin selects an RFQ  
+2. Clicks **“Run AI Evaluation”**  
+3. Backend:
+   - Fetches quotes & vendor data  
+   - Runs scoring algorithm  
+   - Stores `aiScore`  
+4. Frontend displays:
+   - Ranked vendors  
+   - Best quote per product  
+
+---
 
 ## 🏗️ Tech Stack
 
-### Frontend
-- React (Vite)
-- CSS / Tailwind
-- Axios (API communication)
+### 💻 Frontend
+- React.js
+- Axios
+- Bootstrap / UI Components
 
-### Backend
+### 🔧 Backend
 - Node.js
 - Express.js
 
-### Database
-- MongoDB (via config/db.js)
+### 🗄️ Database
+- MongoDB (Mongoose)
 
-### AI Service
-- Custom AI Engine (services/aiEngine.js)
-- Used for quote comparison and decision support
+### 🔐 Authentication
+- JWT-based Auth
+- Role-Based Access Control (Admin)
 
-## 📂 Project Structure
+---
 
-```
+## 📁 Project Structure
+
 moidev/
 │
 ├── backend/
