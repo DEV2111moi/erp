@@ -91,72 +91,42 @@ AI Score = (0.5 × Price) + (0.3 × Delivery) + (0.2 × Rating)
 
 ---
 
-## 🔄 System Workflow
+---
 
-```
-Admin Login
-   ↓
-Create RFQ (Multiple Products)
-   ↓
-Select Vendors
-   ↓
-Vendors Receive RFQ
-   ↓
-Vendors Submit Quotes
-   ↓
-System Stores Data
-   ↓
-AI Compares Quotes
-   ↓
-Admin Reviews Suggestions
-   ↓
-Generate Purchase Order
-   ↓
-Order Completion
-```
+## 🧠 AI Engine Highlights
 
-## ⚙️ Installation & Setup
+- 📊 Groups quotes by product  
+- ⚖️ Normalizes values (0 → 1 scale)  
+- 🧮 Applies weighted scoring  
+- 🥇 Ranks vendors automatically  
 
-### 🔧 Prerequisites
-- Node.js
-- npm
-- MongoDB
+---
 
-### 📥 Clone Repository
-```bash
-git clone https://github.com/your-username/procurement-erp.git
-cd procurement-erp
-```
+## 📌 Example Use Case
 
-### 🔙 Backend Setup
-```bash
-cd backend
-npm install
-npm start
-```
+> You need to buy 100 keyboards.
 
-### 🌐 Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
-```
+| Vendor | Price | Delivery | Rating |
+|--------|------|---------|--------|
+| A      | ₹2000 | 3 days  | ⭐⭐⭐⭐⭐ |
+| B      | ₹1800 | 7 days  | ⭐⭐⭐⭐  |
+| C      | ₹2200 | 2 days  | ⭐⭐⭐   |
 
-## 🔐 Environment Variables
+👉 AI instantly calculates and selects the **best overall deal**.
 
-Create a `.env` file in `backend/`:
 
-```
-PORT=5000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
-```
+---
 
-## 🤖 AI Engine
+## 🧠 AI Evaluation Dashboard
 
-Located in: `backend/services/aiEngine.js`
+Smartly analyzes and ranks vendor quotes using price, delivery time, and vendor rating.
 
-Used for:
-- Quote comparison
-- Vendor ranking
-- Decision support
+- 🏆 Automatically identifies the **best vendor**
+- 📊 Displays **detailed score breakdown**
+- ⚡ Enables **quick, data-driven decisions**
+
+
+<img width="2795" height="1548" alt="image" src="https://github.com/user-attachments/assets/630e5d21-ba1f-4413-a376-d2aff64c92f9" />
+<img width="2793" height="1557" alt="image" src="https://github.com/user-attachments/assets/73cf3ad6-b12c-4079-a51c-08683dfd659e" />
+<img width="2793" height="1545" alt="image" src="https://github.com/user-attachments/assets/ae188314-6324-4733-86ba-c6dffd858c64" />
+
